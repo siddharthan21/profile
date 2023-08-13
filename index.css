@@ -1,0 +1,218 @@
+*,p,h1,h2,h3,h4{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: #635985;
+    display: flex;
+    flex-direction: row;
+    
+}
+.head{
+    display: flex;
+    width: 90%;
+    justify-content: end;
+}
+.header>.head>p{
+    margin: 2rem 0; 
+    /* margin-right: 10rem; */
+}
+.header>.head>p>button{
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: serif;
+    letter-spacing: 3px;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 100vh;
+    place-items: center;    
+    background-image: url(/img/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.avif);   
+    background-repeat: no-repeat;
+    background-position: right  ;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.text>h1{
+    font-size: 4rem;
+    font-family: borel;
+}
+.text>p{
+    /* font-family: ; */
+    font-size: 3rem;
+}
+.text>h3{
+    font-family: roboto mono;
+    font-size: 3rem;
+
+}
+.next-content-intro{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: #18122B;
+    justify-content: space-around;
+}
+.hello{
+    padding: 5rem;
+}
+.hello>h1{
+    font-size: 3.5rem;
+}
+.hello>p{
+    font-size: 2rem;
+    font-family: arial;
+}
+.show-text{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.show-item{
+    margin:1rem 1rem;
+    display: grid;
+    grid-template:1fr 1fr /1fr 1fr;
+    gap: 9rem;
+    /* text-align: center; */
+}
+.show-item img{
+    width: 55%;
+    float: left;
+    border: #443C68 solid 2px;
+}
+.footer{
+    background-color: #18122B;
+    /* width: 1%; */
+    /* height: 50px; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: end; */
+}
+.show-item>div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.dis-foot{
+    display: flex;
+    /* flex-direction: column; */
+    width: 90%;
+    justify-content: end;
+    gap: 20px;
+    color: aliceblue;
+}
+.show-item>div>p{
+    /* float: right; */
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+}
+a{
+    color: tan;
+}
+
+@media(max-width:790px) {
+    .header{
+        background-color: #3b6271;
+    }
+    .header>.head>p{
+        margin: 1rem 0; 
+        /* margin-right: 10rem; */
+    }
+    .text>h1{
+        font-size: 2rem;
+    }
+    .header>.head>p>button{
+        padding: .5rem;
+        border-radius: 10px;
+        font-family: serif;
+        letter-spacing: 2px;
+    }
+    .text>p{
+        /* font-family: ; */
+        font-size: 1rem;
+    }
+    .text>h3{
+        font-family: roboto mono;
+        font-size: 1.5rem;
+    
+    }
+    .main-content{
+        grid-template-columns: 1fr;
+        background-image: url("https://images.unsplash.com/photo-1675351085230-ab39b2289ff4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=632&q=80");
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+    .next-content-intro{
+        background-color: #18122B   ;
+    }
+    .hello>h1{
+        font-size: 2rem ;
+    }
+    .hello>p{
+        word-spacing: 5px;
+        font-size: 1.2rem ;
+    }
+    .hello{
+        padding: 2rem;
+    }
+    .show-item{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .show-item img{
+        float: none;
+    }
+    .show-item > div{
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+    .show-item>div>img{
+        width: 100%;
+    }
+    .show-item>div>p{
+        word-spacing: 2px;
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+    .footer{
+        background-color: #18122B;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 750px){
+    .text>h1{
+        font-size: 2.5rem;
+      
+    }
+    .main-content{
+        background-image: url(https://images.unsplash.com/photo-1675351085230-ab39b2289ff4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=632&q=80);
+        background-size: cover  ;
+        color:whitesmoke;
+    }
+    .text>p{
+        font-size: 1.9rem;
+    }
+    .text>h3{
+        font-size: 2.1rem;
+    }
+    .show-item{
+        gap: 1rem;
+    }
+    .show-item img{
+        height: fit-content;
+    }
+    .header{
+        background-color:none;
+    }
+}
